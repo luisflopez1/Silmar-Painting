@@ -6,17 +6,25 @@ html,body{
 	width: 100%;
 }
 
-body{
-	width: 85%
-	max-width: 1640px
-	margin: 0 auto
-}
 
 html{
 	background-color: #124F70;
 	background-image: linear-gradient(
 		to right,
 		#124F70, #092838)
+}
+
+.container{
+    max-width: 100%;
+    overflow:hidden;
+    max-height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#video{
+    min-width: 100%;
+	max-height: 100%;
+    
 }
 
 main{
@@ -26,31 +34,70 @@ main{
 
 }
 
+h1,h2,h3{
+	font-family: 'Franklin Gothic ATF', sans-serif;
+}
+
+h1{
+	font-size: 85px;
+	line-height: 84px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: #FFFAF6;
+}
+
 /*hero styles*/
-
-.banner{
-	background-color: #FFFAF6;
-	box-shadow: black 22px 11px 45px;
-}
-
-ul,li{
-	display: inline-block;
-	float: right;
-}
-
-
-
-
 .hero{
-	background-image: url('../images/Group 28.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
 	height: 100%;
 	padding: 0 7.5%;
 }
+
+.logo{
+	width: 170px;
+	margin-top: 70px;
+
+}
+
+.banner{
+	background-color: #FFFAF6;
+	box-shadow: black 22px 11px 45px;
+}
+
+.hero-banner{
+	width: 536px;
+	position: absolute;
+	right: 7.5%;
+
+}
+
+ul{
+	display: inline-block;
+	float: right;
+}
+li{
+	display: inline-block;
+	color: #FFFAF6;
+	padding-left: 51px;
+
+}
+
+
+/*intro style*/
+
+
 /*category styles*/
 /*category styles*/
 /*category styles*/
-/*category styles*/
-/*category styles*/
+/*footer styles*/
+
+footer{
+	background-color: #152022;
+}
