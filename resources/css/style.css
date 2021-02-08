@@ -11,19 +11,20 @@ html{
 	background-color: #124F70;
 	background-image: linear-gradient(
 		to right,
-		#124F70, #092838)
+		#124F70, #092838);
+overflow-x: hidden;
 }
 
 .container{
-    max-width: 100%;
+    min-width: 100%;
     overflow:hidden;
     max-height: 100%;
     position: absolute;
     z-index: -1;
 }
 #video{
-    min-width: 100%;
-	max-height: 100%;
+    height: 100%;
+    width: 100%;
     
 }
 
@@ -41,6 +42,20 @@ h1,h2,h3{
 h1{
 	font-size: 85px;
 	line-height: 84px;
+	margin-bottom: 0px;
+}
+
+h2{
+	font-size: 74px;
+}
+
+h3{
+	font-size: 33px;
+}
+
+p{
+	font-size: 24px;
+	line-height: 40px;
 }
 
 a{
@@ -61,21 +76,41 @@ a:visited{
 }
 
 .logo{
-	width: 170px;
+	width: 14%;
 	margin-top: 70px;
 
 }
 
 .banner{
+	box-sizing: border-box;
 	background-color: #FFFAF6;
 	box-shadow: black 22px 11px 45px;
+	padding:0 61px;
 }
 
 .hero-banner{
 	width: 536px;
 	position: absolute;
 	right: 7.5%;
+	top: 42%;
+	height: 713px;
 
+}
+
+.hero-banner:hover{
+	transform: translateY(-50px);
+}
+
+button{
+	color: #FFFAF6;
+	background-color: #E6021A;
+	border: none;
+	width: 100%;
+	margin: 0;
+}
+
+button h3{
+	margin: 0;
 }
 
 ul{
@@ -85,17 +120,76 @@ ul{
 li{
 	display: inline-block;
 	color: #FFFAF6;
-	padding-left: 51px;
+	padding-left: 45px;
 
 }
 
 
 /*intro style*/
 
+.intro{
+	color: #FFFAF6;
+}
 
-/*category styles*/
-/*category styles*/
-/*category styles*/
+.intro h2{
+	margin-top: 262px;
+}
+
+.intro img{
+	display: inline-block;
+	width: 53%;
+	position: relative;
+	right: 160px;
+}
+
+.intro p{
+	display: inline-block;
+	width: 600px;
+	vertical-align: top;
+
+}
+
+
+/*services styles*/
+.services{
+
+}
+
+.services-banner{
+	width: 470px;
+	height: 772px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 154px;
+}
+
+.services img{
+	display: inline-block;
+	position: relative;
+	width: 66%;
+	left: 150px;
+}
+/*work styles*/
+
+.work h2{
+	text-align: center;
+	color: #FFFAF6;
+}
+/*supplies styles*/
+
+.supplies{
+	color: #FFFAF6;
+}
+/*about styles*/
+
+.about img{
+	width: 100%;
+}
+/*contact styles*/
+
+.contact img{
+	width: 100%;
+}
 /*footer styles*/
 
 footer{
