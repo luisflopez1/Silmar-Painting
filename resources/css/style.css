@@ -13,19 +13,18 @@ html{
 	background-image: linear-gradient(
 		to right,
 		#124F70, #092838);
-overflow-x: hidden;
 }
 
 .container{
-    min-width: 100%;
-    overflow:hidden;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -1;
 }
 #video{
     height: 100%;
     width: 100%;
+
     
 }
 
@@ -57,10 +56,12 @@ h3{
 p{
 	font-size: 24px;
 	line-height: 40px;
+	font-family: 'Georgia', serif;
 }
 
 a{
 	text-decoration: none;
+	color: inherit;
 }
 
 a:visited{
@@ -105,6 +106,23 @@ nav{
 
 }
 
+.hero-banner-mobile{
+	display: none;
+	width: 100%;
+	color: #FFFAF6;
+	text-align: center;
+	margin-top: 100px;
+
+}
+
+.hero-banner-mobile h1{
+	font-size: 50px;
+	line-height: 48px;
+	text-align: left;
+	margin: 0 auto;
+	
+}
+
 .hero-banner:hover{
 	transform: translateY(-50px);
 }
@@ -115,6 +133,8 @@ button{
 	border: none;
 	width: 100%;
 	margin: 0;
+	height: 50px;
+	border-radius: 10px;
 }
 
 button h3{
@@ -130,6 +150,38 @@ li{
 	color: #FFFAF6;
 	padding-left: 45px;
 
+}
+
+@media screen and (max-width: 500px){
+	
+    #video{
+    	width: inherit;
+    	min-height: 100%;
+    }
+
+	nav{
+		justify-content: center;
+		align-items: center;
+	}
+    
+    .logo{
+        width: 40%;
+	}
+
+	nav li, .hero-banner{
+		display: none;
+	}
+
+	.hero-banner-mobile{
+		display: flex;
+		flex-direction: column;
+	}
+
+	button{
+		margin-top: 25px;
+		margin-bottom: 50px;
+		width: 90%;
+	}
 }
 
 
@@ -157,11 +209,37 @@ li{
 
 }
 
+.mobile-menu{
+	display: none;
+}
+
+@media screen and (max-width: 500px){
+
+	.intro h2, .intro img{
+		display: none;
+	}
+
+	.mobile-menu{
+        display: inherit;
+        color: #124F70;
+	}
+
+	.mobile-menu h3{
+		height: 60px;
+		margin-top: 12px;
+		margin-bottom: 0;
+		background-color:#FFFAF6;
+		padding-left: 40px;
+	}
+
+	.intro p{
+		font-size: 18px;
+		width: 100%;
+	}
+}
+
 
 /*services styles*/
-.services{
-
-}
 
 .services-banner{
 	width: 470px;
@@ -176,6 +254,18 @@ li{
 	position: relative;
 	width: 66%;
 	left: 150px;
+}
+
+@media screen and (max-width: 500px){
+
+	.services-banner{
+		width: 100%;
+		text-align: center;
+	}
+
+	.services img{
+		display: none;
+	}
 }
 /*work styles*/
 
@@ -253,11 +343,11 @@ li{
 	grid-template: repeat(6, 1fr)/ repeat(12, 1fr);
 }
 
-.about img{
+.profile{
 	grid-area: 2/1/span 5/span 12;
-	object-fit: cover;
-	min-width: 100%;
-	max-height: 100% 
+	background-image: url(../images/profile.png);
+	background-size: cover;
+
 }
 
 .about-banner{
@@ -312,9 +402,32 @@ footer{
 footer img{
 	display: inline-block;
 	width: 160px;
-	vertical-align: baseline;
 }
 
-footer ul{
-	vertical-align: baseline;
+
+@media screen and (max-width: 500px){
+
+	footer{
+		height: 320px;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	footer ul, footer li{
+		padding: 0;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
