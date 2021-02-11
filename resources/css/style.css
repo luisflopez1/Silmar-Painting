@@ -168,7 +168,7 @@ li{
         width: 40%;
 	}
 
-	nav li, .hero-banner{
+	nav li,nav ul, .hero-banner{
 		display: none;
 	}
 
@@ -180,7 +180,7 @@ li{
 	button{
 		margin-top: 25px;
 		margin-bottom: 50px;
-		width: 90%;
+		width: 100%;
 	}
 }
 
