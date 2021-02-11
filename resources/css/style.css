@@ -69,6 +69,27 @@ a:visited{
 	color: #FFFAF6;
 }
 
+@media screen and (max-width: 500px){
+	
+  h1{
+  	font-size: 33px;
+	line-height: 30px;
+	text-align: left;
+	margin: 0 auto;
+}
+  h2{
+  	font-size: 27px;
+  }
+
+  h3{
+  	font-size: 18px;
+  }
+
+  p{
+  	font-size: 18px;
+  }
+}
+
 /*hero styles*/
 
 nav{
@@ -112,17 +133,10 @@ nav{
 	width: 100%;
 	color: #FFFAF6;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 67px;
 
 }
 
-.hero-banner-mobile h1{
-	font-size: 50px;
-	line-height: 48px;
-	text-align: left;
-	margin: 0 auto;
-	
-}
 
 .hero-banner:hover{
 	transform: translateY(-50px);
@@ -174,9 +188,13 @@ li{
 		flex-direction: column;
 	}
 
+	.mobile-phone, .hero-banner-mobile p{
+		margin-top: 33px;
+		margin-bottom: 0;
+	}
+
 	button{
 		margin-top: 33px;
-		margin-bottom: 33px;
 		width: 100%;
 	}
 }
@@ -186,11 +204,9 @@ li{
 
 .intro{
 	color: #FFFAF6;
-}
-
-.intro h2{
 	margin-top: 262px;
 }
+
 
 .intro img{
 	display: inline-block;
@@ -211,6 +227,10 @@ li{
 }
 
 @media screen and (max-width: 500px){
+    
+    .intro{
+    	margin-top: 50px;
+    }
 
 	.intro h2, .intro img{
 		display: none;
@@ -221,17 +241,25 @@ li{
         color: #124F70;
 	}
 
-	.mobile-menu h3{
+	.mobile-menu h2{
+		display: block;
 		height: 60px;
 		margin-top: 12px;
 		margin-bottom: 0;
 		background-color:#FFFAF6;
 		padding-left: 40px;
+		padding-top: 20px;
+	}
+
+	.mobile-menu a:visited{
+		color: inherit;
+
 	}
 
 	.intro p{
 		font-size: 18px;
 		width: 100%;
+		margin-top: 64px;
 	}
 }
 
@@ -258,8 +286,13 @@ li{
 
 	.services-banner{
 		width: 100%;
+		height: 374px;
 		text-align: center;
-		margin: 0;
+		margin: 50px 0 0;
+	}
+
+	.services h2{
+		margin-top: 96px;
 	}
 
 	.services img{
@@ -313,6 +346,16 @@ li{
 
 	.work-grid{
 		display: block;
+		height: 637px;
+	}
+
+	.work h2{
+		margin-top: 97px;
+		margin-bottom: 25px;
+	}
+
+	.work p{
+		margin-top: 44px;
 	}
 	}
 
@@ -374,6 +417,20 @@ li{
 
 	.about{
 		display: block;
+		height: 711px;
+
+	}
+
+	.about-banner{
+		padding: 46px 0 36px;
+	}
+
+	.about-banner h2{
+		text-align: center;
+	}
+
+	.about-banner h2, .about-banner h3, .about-banner p{
+		padding: 0 7.5%;
 	}
 
 	.mobile-profile{
@@ -406,10 +463,13 @@ li{
 	.reviews-banner{
 		display: flex;
 		flex-direction: column;
+		background-color: transparent;
+		box-shadow: none;
 	}
 
 	.review{
 		width: 100%;
+		margin-top: 30px;
 	}
 
 }
@@ -426,7 +486,8 @@ li{
 }
 
 .contact h3{
-	width: 482px;
+	font-size: 18px;
+	width: 100%;
 	margin: 0 auto;
 	vertical-align: center;
 	line-height: 90px;
