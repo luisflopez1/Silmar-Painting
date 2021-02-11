@@ -20,15 +20,16 @@ html{
     height: 100%;
     position: absolute;
     z-index: -1;
+    overflow: hidden;
 }
 #video{
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    
 
     
 }
 
-main{
+.intro,.work{
 	width: 85%;
 	max-width: 1640px;
 	margin: 0 auto;
@@ -154,10 +155,6 @@ li{
 
 @media screen and (max-width: 500px){
 	
-    #video{
-    	width: inherit;
-    	min-height: 100%;
-    }
 
 	nav{
 		justify-content: center;
@@ -178,8 +175,8 @@ li{
 	}
 
 	button{
-		margin-top: 25px;
-		margin-bottom: 50px;
+		margin-top: 33px;
+		margin-bottom: 33px;
 		width: 100%;
 	}
 }
@@ -247,13 +244,14 @@ li{
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 154px;
+	margin-left: 7.5%;
 }
 
 .services img{
 	display: inline-block;
 	position: relative;
-	width: 66%;
-	left: 150px;
+	width: 56%;
+	float: right;
 }
 
 @media screen and (max-width: 500px){
@@ -261,6 +259,7 @@ li{
 	.services-banner{
 		width: 100%;
 		text-align: center;
+		margin: 0;
 	}
 
 	.services img{
@@ -310,7 +309,12 @@ li{
 	width: 100%;
 }
 
+@media screen and (max-width: 500px){
 
+	.work-grid{
+		display: block;
+	}
+	}
 
 /*supplies styles*/
 
@@ -333,6 +337,13 @@ li{
 	justify-content: space-around;
 	align-items: center;
 }
+
+@media screen and (max-width: 500px){
+
+	.supplies{
+		display: none;
+	}
+	}
 /*about styles*/
 
 .about{
@@ -350,9 +361,25 @@ li{
 
 }
 
+.mobile-profile{
+    display: none;
+}
+
 .about-banner{
 	padding-top: 25%;
 	grid-area: 1/8/span 5/ span 4;
+}
+
+@media screen and (max-width: 500px){
+
+	.about{
+		display: block;
+	}
+
+	.mobile-profile{
+		display: inherit;
+		width: 100%;
+	}
 }
 /*reviews styles*/
 
@@ -368,6 +395,23 @@ li{
 	display: inline-block;
 	height: 212px;
 	width: 470px;
+}
+
+@media screen and (max-width: 500px){
+
+	.reviews-banner h2{
+		display: none;
+	}
+
+	.reviews-banner{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.review{
+		width: 100%;
+	}
+
 }
 /*contact styles*/
 
