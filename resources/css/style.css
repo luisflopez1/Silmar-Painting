@@ -213,14 +213,27 @@ button h3{
 
 	.logo{
 		width: 25%;
+		max-width: 230px;
 	}
 
 	.hero-banner{
 		position: inherit;
         display: flex;
         flex-direction: column;
-        margin: 25px auto 0;
+        margin: 100px auto 0;
         height: 500px;
+        width: 600px;
+	}
+
+	.hero-banner .inline-brand{
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 750px){
+
+	.hero-banner{
+		width: 100%;
 	}
 }
 
@@ -284,11 +297,28 @@ button h3{
 	display: none;
 }
 
+img.alt-img{
+	display: none;
+}
+
 @media screen and (max-width: 1590px){
  
     .intro img{
     	display: none;
     }
+    img.alt-img{
+	display: inline-block;
+    position: absolute;
+    width: 70%;
+    right: -140px;
+    transform: rotate(68deg) translateX( 100px);
+    }
+}
+
+@media screen and (max-width: 1100px){
+	img.alt-img{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 500px){
@@ -480,6 +510,9 @@ button h3{
 }
 
 .supplies img{
+	min-width: 0;
+	max-width: 80%;
+	margin: 0 25px;
 }
 
 .supplies-banner{
